@@ -1,20 +1,9 @@
 {
   "name": "es6-practice",
   "version": "1.0.0",
-  "description": "",
-  "main": "js/main.js",
   "scripts": {
     "start": "http-server",
     "webpack": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DzianisY/es6-practice.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DzianisY/es6-practice/issues"
   },
   "homepage": "https://github.com/DzianisY/es6-practice#readme",
   "devDependencies": {

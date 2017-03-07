@@ -1,6 +1,6 @@
 'use strict';
 
-class Cart {
+export default class Cart {
 
     constructor(id, customerName) {
         this.id = id;

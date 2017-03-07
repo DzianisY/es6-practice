@@ -1,8 +1,8 @@
 'use strict';
 
-let Product = require("../models/product");
-let Cart = require("../models/cart");
-let Order = require("../models/order");
+import Product from './models/product';
+import Cart from './models/cart';
+import Order from './models/order';
 
 const constants = {
     ORDER_APPROVED: "approved",

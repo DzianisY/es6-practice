@@ -1,6 +1,6 @@
 'use strict';
 
-class Order {
+export default class Order {
 
     constructor(id, cartId, orderStatus, summaryPrice) {
         this.id = id;

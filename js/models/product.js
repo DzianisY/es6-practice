@@ -1,6 +1,6 @@
 'use strict';
 
-class Product {
+export default class Product {
 
     constructor(name, price, shortDescr) {
         this.name = name;
