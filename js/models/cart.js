@@ -16,7 +16,7 @@ export default class Cart {
         return summaryCost
     }
 
-    set addToCart(product) {
+    addToCart(product) {
         this.productsList.push(product);
     }
 }
