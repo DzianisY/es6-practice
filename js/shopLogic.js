@@ -1,23 +1,24 @@
 'use strict';
 
-import Product from './models/product';
+//import Product from './models/product';
+
 import Cart from './models/cart';
 import Order from './models/order';
 
-const constants = {
+export const constants = {
     ORDER_APPROVED: "approved",
     ORDER_PENDING: "pending"
 };
 
-const createCart = (customerName) => {
+export const createCart = (customerName) => {
     return new Cart(generateId(), customerName)
 };
 
-const createOrder = (cart) => {
+export const createOrder = (cart) => {
     return new Order(generateId(), cart.id, constants.ORDER_PENDING, cart.getSummaryCost)
 };
 
-const resolveOrder = (order, cash) => {
+export const resolveOrder = (order, cash) => {
     if (order.summaryPrice<=cash) {
         order.status = constants.ORDER_APPROVED;
         return "Order approved";
